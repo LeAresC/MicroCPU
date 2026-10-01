@@ -58,7 +58,7 @@ on the Quartus Prime software download page.
 	(input)
 	(rect 448 360 616 376)
 	(text "INPUT" (rect 125 0 153 9)(font "Arial" (font_size 6)))
-	(text "inp[4..0]" (rect 5 0 46 10)(font "Arial" ))
+	(text "inp[4..0]" (rect 5 0 45 10)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -69,40 +69,6 @@ on the Quartus Prime software download page.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 16)(font "Arial" (font_size 6)))
-)
-(pin
-	(output)
-	(rect 1072 256 1248 272)
-	(text "OUTPUT" (rect 1 0 39 9)(font "Arial" (font_size 6)))
-	(text "out[4..0]" (rect 90 0 128 12)(font "Intel Clear" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-	(annotation_block (location)(rect 1248 272 1304 288))
-)
-(pin
-	(output)
-	(rect 1072 312 1248 328)
-	(text "OUTPUT" (rect 1 0 39 9)(font "Arial" (font_size 6)))
-	(text "led" (rect 90 0 105 12)(font "Intel Clear" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-	(annotation_block (location)(rect 1248 328 1304 344))
 )
 (symbol
 	(rect 416 208 528 304)
@@ -245,6 +211,155 @@ on the Quartus Prime software download page.
 		(line (pt 8 8)(pt 24 8))
 	)
 )
+(symbol
+	(rect 1280 192 1400 320)
+	(text "reg" (rect 5 0 23 14)(font "Intel Clear" (font_size 8)))
+	(text "inst3" (rect 8 112 30 124)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Din0" (rect 0 0 28 14)(font "Intel Clear" (font_size 8)))
+		(text "Din0" (rect 21 27 49 41)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Din1" (rect 0 0 28 14)(font "Intel Clear" (font_size 8)))
+		(text "Din1" (rect 21 43 49 57)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Din2" (rect 0 0 28 14)(font "Intel Clear" (font_size 8)))
+		(text "Din2" (rect 21 59 49 73)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "Din3" (rect 0 0 28 14)(font "Intel Clear" (font_size 8)))
+		(text "Din3" (rect 21 75 49 89)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "lock" (rect 0 0 23 14)(font "Intel Clear" (font_size 8)))
+		(text "lock" (rect 21 91 44 105)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 120 32)
+		(output)
+		(text "Dout1" (rect 0 0 36 14)(font "Intel Clear" (font_size 8)))
+		(text "Dout1" (rect 63 27 99 41)(font "Intel Clear" (font_size 8)))
+		(line (pt 120 32)(pt 104 32))
+	)
+	(port
+		(pt 120 48)
+		(output)
+		(text "Dout2" (rect 0 0 36 14)(font "Intel Clear" (font_size 8)))
+		(text "Dout2" (rect 63 43 99 57)(font "Intel Clear" (font_size 8)))
+		(line (pt 120 48)(pt 104 48))
+	)
+	(port
+		(pt 120 64)
+		(output)
+		(text "Dout3" (rect 0 0 36 14)(font "Intel Clear" (font_size 8)))
+		(text "Dout3" (rect 63 59 99 73)(font "Intel Clear" (font_size 8)))
+		(line (pt 120 64)(pt 104 64))
+	)
+	(port
+		(pt 120 80)
+		(output)
+		(text "Dout4" (rect 0 0 36 14)(font "Intel Clear" (font_size 8)))
+		(text "Dout4" (rect 63 75 99 89)(font "Intel Clear" (font_size 8)))
+		(line (pt 120 80)(pt 104 80))
+	)
+	(drawing
+		(rectangle (rect 16 16 104 112))
+	)
+)
+(symbol
+	(rect 1088 216 1200 312)
+	(text "LPM_MUX" (rect 23 0 94 15)(font "Arial" (font_size 10)))
+	(text "inst5" (rect 3 84 25 96)(font "Intel Clear" ))
+	(port
+		(pt 0 48)
+		(input)
+		(text "data[LPM_SIZE-1..0][LPM_WIDTH-1..0]" (rect 6 33 221 45)(font "Arial" (font_size 8)))
+		(text "data[][]" (rect 6 33 44 45)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 44 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "clock" (rect 6 51 35 63)(font "Arial" (font_size 8)))
+		(text "clock" (rect 6 51 35 63)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 44 64))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "aclr" (rect 6 19 27 31)(font "Arial" (font_size 8)))
+		(text "aclr" (rect 6 19 27 31)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 44 32))
+	)
+	(port
+		(pt 56 96)
+		(input)
+		(text "sel[LPM_WIDTHS-1..0]" (rect 59 80 185 92)(font "Arial" (font_size 8)))
+		(text "sel[]" (rect 59 80 82 92)(font "Arial" (font_size 8)))
+		(line (pt 56 96)(pt 56 80)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "clken" (rect 6 67 35 79)(font "Arial" (font_size 8)))
+		(text "clken" (rect 6 67 35 79)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 44 80))
+	)
+	(port
+		(pt 112 56)
+		(output)
+		(text "result[LPM_WIDTH-1..0]" (rect 75 41 208 53)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 41 113 53)(font "Arial" (font_size 8)))
+		(line (pt 68 56)(pt 112 56)(line_width 3))
+	)
+	(parameter
+		"LPM_PIPELINE"
+		""
+		"Output latency in clock cycles - requires use of optional clock"
+		"0" "1" "2" "3" "4" 
+	)
+	(parameter
+		"LPM_SIZE"
+		"4"
+		"Number of inputs per MUX, any integer > 1"
+		" 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
+	)
+	(parameter
+		"LPM_WIDTH"
+		"4"
+		"Number of MUXes, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
+	)
+	(parameter
+		"LPM_WIDTHS"
+		"CEIL(LOG2(LPM_SIZE))"
+		"Width of sel[] port"
+		"CEIL(LOG2(LPM_SIZE))" 
+	)
+	(drawing
+		(line (pt 44 88)(pt 44 16))
+		(line (pt 68 72)(pt 68 32))
+		(line (pt 44 16)(pt 68 32))
+		(line (pt 44 88)(pt 68 72))
+	)
+	(annotation_block (parameter)(rect 1200 144 1434 214))
+)
 (connector
 	(pt 416 232)
 	(pt 328 232)
@@ -253,18 +368,6 @@ on the Quartus Prime software download page.
 (connector
 	(pt 328 264)
 	(pt 416 264)
-)
-(connector
-	(pt 1024 280)
-	(pt 896 280)
-)
-(connector
-	(pt 1024 280)
-	(pt 1024 320)
-)
-(connector
-	(pt 1024 320)
-	(pt 1072 320)
 )
 (connector
 	(pt 560 280)
@@ -299,16 +402,25 @@ on the Quartus Prime software download page.
 	(bus)
 )
 (connector
-	(pt 896 264)
-	(pt 1072 264)
-	(bus)
-)
-(connector
 	(pt 640 240)
 	(pt 640 264)
 )
 (connector
 	(pt 640 264)
 	(pt 688 264)
+)
+(connector
+	(pt 896 280)
+	(pt 1024 280)
+)
+(connector
+	(pt 896 264)
+	(pt 1088 264)
+	(bus)
+)
+(connector
+	(pt 1200 272)
+	(pt 1232 272)
+	(bus)
 )
 (junction (pt 560 256))
