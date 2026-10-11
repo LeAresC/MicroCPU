@@ -34,15 +34,15 @@ on the Quartus Prime software download page.
 	(port
 		(pt 0 48)
 		(input)
-		(text "clock" (rect 0 0 29 14)(font "Intel Clear" (font_size 8)))
-		(text "clock" (rect 21 43 50 57)(font "Intel Clear" (font_size 8)))
+		(text "Control" (rect 0 0 42 14)(font "Intel Clear" (font_size 8)))
+		(text "Control" (rect 21 43 63 57)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 48)(pt 16 48))
 	)
 	(port
 		(pt 0 64)
 		(input)
-		(text "Control" (rect 0 0 42 14)(font "Intel Clear" (font_size 8)))
-		(text "Control" (rect 21 59 63 73)(font "Intel Clear" (font_size 8)))
+		(text "clock" (rect 0 0 29 14)(font "Intel Clear" (font_size 8)))
+		(text "clock" (rect 21 59 50 73)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 64)(pt 16 64))
 	)
 	(port
