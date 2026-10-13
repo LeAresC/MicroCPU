@@ -31,35 +31,35 @@ CONTENT BEGIN
 	18 : 93E0;  -- LDI R0, #-1
 	19 : 9142;  -- LDI R2, #10
 	1A : 9363;  -- LDI R3, #-5
-	1B : B000;  -- RESET
-	1C : A000;  -- NOP
-	1D : A3A8;  -- JMP FIM
-	1E : A000;  -- NOP
-	1F : A000;  -- NOP (preenchimento)
-	20 : A000;  -- NOP (preenchimento)
-	21 : A000;  -- NOP (preenchimento)
-	22 : A000;  -- NOP (preenchimento)
-	23 : A000;  -- NOP (preenchimento)
-	24 : A000;  -- NOP (preenchimento)
-	25 : A000;  -- NOP (preenchimento)
-	26 : A000;  -- NOP (preenchimento)
-	27 : A000;  -- NOP (preenchimento)
-	28 : A000;  -- NOP (preenchimento)
-	29 : A000;  -- NOP (preenchimento)
-	2A : A000;  -- NOP (preenchimento)
-	2B : A000;  -- NOP (preenchimento)
-	2C : A000;  -- NOP (preenchimento)
-	2D : A000;  -- NOP (preenchimento)
+	1B : AA9C;  -- JZ R2, ERRO
+	1C : 9000;  -- LDI R0, #0
+	1D : A01C;  -- JZ R0, JZ_OK
+	1E : 90E1;  -- LDI R1, #7
+	1F : 93E1;  -- LDI R1, #-1
+	20 : E860;  -- CMP R2, R3
+	21 : E29C;  -- JE ERRO
+	22 : 8043;  -- MOV R3, R2
+	23 : E860;  -- CMP R2, R3
+	24 : 9060;  -- LDI R0, #3
+	25 : E11C;  -- JE JE_OK
+	26 : 90C0;  -- LDI R0, #6
+	27 : 93E0;  -- LDI R0, #-1
+	28 : E020;  -- CMP R0, R1
+	29 : E29C;  -- JE ERRO
+	2A : B000;  -- RESET
+	2B : A000;  -- NOP
+	2C : A198;  -- JMP FIM
+	2D : A000;  -- NOP
 	2E : A000;  -- NOP (preenchimento)
 	2F : A000;  -- NOP (preenchimento)
 	30 : 9181;  -- LDI R1, #12
 	31 : A328;  -- JMP BAIXO
 	32 : A000;  -- NOP
 	33 : 93E1;  -- LDI R1, #-1
-	34 : A000;  -- NOP (preenchimento)
-	35 : A000;  -- NOP (preenchimento)
-	36 : A000;  -- NOP (preenchimento)
-	37 : A000;  -- NOP (preenchimento)
+	34 : 93E0;  -- LDI R0, #-1
+	35 : 93E1;  -- LDI R1, #-1
+	36 : A2D8;  -- JMP PARA
+	37 : A000;  -- NOP
 	38 : A000;  -- NOP (preenchimento)
 	39 : A000;  -- NOP (preenchimento)
 	3A : A000;  -- NOP (preenchimento)
