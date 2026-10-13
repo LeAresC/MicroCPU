@@ -1,38 +1,71 @@
--- Copyright (C) 2025  Altera Corporation. All rights reserved.
--- Your use of Altera Corporation's design tools, logic functions 
--- and other software and tools, and any partner logic 
--- functions, and any output files from any of the foregoing 
--- (including device programming or simulation files), and any 
--- associated documentation or information are expressly subject 
--- to the terms and conditions of the Altera Program License 
--- Subscription Agreement, the Altera Quartus Prime License Agreement,
--- the Altera IP License Agreement, or other applicable license
--- agreement, including, without limitation, that your use is for
--- the sole purpose of programming logic devices manufactured by
--- Altera and sold by Altera or its authorized distributors.  Please
--- refer to the Altera Software License Subscription Agreements 
--- on the Quartus Prime software download page.
-
--- Quartus Prime generated Memory Initialization File (.mif)
-
-WIDTH=16;
-DEPTH=64;
-
-ADDRESS_RADIX=UNS;
-DATA_RADIX=BIN;
-
+-- proj.mif: gerado por montador.py a partir de proj.asm
+DEPTH = 64;
+WIDTH = 16;
+ADDRESS_RADIX = HEX;
+DATA_RADIX = HEX;
 CONTENT BEGIN
-	0   :   1001000010100000;
-	1   :   1001000001100001;
-	2   :   0000000000100010;
-	3   :   0010000000100011;
-	4   :   0100000000100010;
-	5   :   0110000000100011;
-	6   :   0001000010100000;
-	7   :   0011001110100001;
-	8   :   0101110001100010;
-	9   :   0111011110000011;
-	10  :   1000000001100000;
-	11  :   1001001000000001;
-	[12..63]  :   1000000000000000;
+	00 : 90A0;  -- LDI R0, #5
+	01 : 9061;  -- LDI R1, #3
+	02 : 93C2;  -- LDI R2, #-2
+	03 : 9203;  -- LDI R3, #-16
+	04 : 8003;  -- MOV R3, R0
+	05 : 8020;  -- MOV R0, R1
+	06 : 8041;  -- MOV R1, R2
+	07 : 8062;  -- MOV R2, R3
+	08 : 0040;  -- ADD R0, R0, R2
+	09 : 2801;  -- SUB R1, R2, R0
+	0A : 4442;  -- MUL R2, R1, R2
+	0B : 6823;  -- DIV R3, R2, R1
+	0C : 13E0;  -- ADD R0, R0, #-1
+	0D : 3481;  -- SUB R1, R1, #4
+	0E : 5C62;  -- MUL R2, R3, #3
+	0F : 7043;  -- DIV R3, R0, #2
+	10 : 7B83;  -- DIV R3, R2, #-4
+	11 : 1820;  -- ADD R0, R2, #1
+	12 : 4841;  -- MUL R1, R2, R2
+	13 : 7802;  -- DIV R2, R2, #0
+	14 : 3021;  -- SUB R1, R0, #1
+	15 : A000;  -- NOP
+	16 : A218;  -- JMP ALTO
+	17 : 9120;  -- LDI R0, #9
+	18 : 93E0;  -- LDI R0, #-1
+	19 : 9142;  -- LDI R2, #10
+	1A : 9363;  -- LDI R3, #-5
+	1B : B000;  -- RESET
+	1C : A000;  -- NOP
+	1D : A3A8;  -- JMP FIM
+	1E : A000;  -- NOP
+	1F : A000;  -- NOP (preenchimento)
+	20 : A000;  -- NOP (preenchimento)
+	21 : A000;  -- NOP (preenchimento)
+	22 : A000;  -- NOP (preenchimento)
+	23 : A000;  -- NOP (preenchimento)
+	24 : A000;  -- NOP (preenchimento)
+	25 : A000;  -- NOP (preenchimento)
+	26 : A000;  -- NOP (preenchimento)
+	27 : A000;  -- NOP (preenchimento)
+	28 : A000;  -- NOP (preenchimento)
+	29 : A000;  -- NOP (preenchimento)
+	2A : A000;  -- NOP (preenchimento)
+	2B : A000;  -- NOP (preenchimento)
+	2C : A000;  -- NOP (preenchimento)
+	2D : A000;  -- NOP (preenchimento)
+	2E : A000;  -- NOP (preenchimento)
+	2F : A000;  -- NOP (preenchimento)
+	30 : 9181;  -- LDI R1, #12
+	31 : A328;  -- JMP BAIXO
+	32 : A000;  -- NOP
+	33 : 93E1;  -- LDI R1, #-1
+	34 : A000;  -- NOP (preenchimento)
+	35 : A000;  -- NOP (preenchimento)
+	36 : A000;  -- NOP (preenchimento)
+	37 : A000;  -- NOP (preenchimento)
+	38 : A000;  -- NOP (preenchimento)
+	39 : A000;  -- NOP (preenchimento)
+	3A : A000;  -- NOP (preenchimento)
+	3B : A000;  -- NOP (preenchimento)
+	3C : A000;  -- NOP (preenchimento)
+	3D : A000;  -- NOP (preenchimento)
+	3E : A000;  -- NOP (preenchimento)
+	3F : A000;  -- NOP (preenchimento)
 END;

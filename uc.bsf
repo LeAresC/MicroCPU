@@ -21,9 +21,9 @@ on the Quartus Prime software download page.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 256 176)
+	(rect 16 16 256 240)
 	(text "uc" (rect 5 0 17 14)(font "Intel Clear" (font_size 8)))
-	(text "inst" (rect 8 144 24 156)(font "Intel Clear" ))
+	(text "inst" (rect 8 208 24 220)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -73,7 +73,35 @@ on the Quartus Prime software download page.
 		(text "use_reg2" (rect 165 107 219 121)(font "Intel Clear" (font_size 8)))
 		(line (pt 240 112)(pt 224 112))
 	)
+	(port
+		(pt 240 128)
+		(output)
+		(text "Write" (rect 0 0 31 14)(font "Intel Clear" (font_size 8)))
+		(text "Write" (rect 188 123 219 137)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 128)(pt 224 128))
+	)
+	(port
+		(pt 240 144)
+		(output)
+		(text "Reset" (rect 0 0 33 14)(font "Intel Clear" (font_size 8)))
+		(text "Reset" (rect 186 139 219 153)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 144)(pt 224 144))
+	)
+	(port
+		(pt 240 160)
+		(output)
+		(text "res_jump" (rect 0 0 55 14)(font "Intel Clear" (font_size 8)))
+		(text "res_jump" (rect 164 155 219 169)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 160)(pt 224 160))
+	)
+	(port
+		(pt 240 176)
+		(output)
+		(text "jump" (rect 0 0 30 14)(font "Intel Clear" (font_size 8)))
+		(text "jump" (rect 189 171 219 185)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 176)(pt 224 176))
+	)
 	(drawing
-		(rectangle (rect 16 16 224 144))
+		(rectangle (rect 16 16 224 208))
 	)
 )
